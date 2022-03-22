@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class JoanProblem2 {
 
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         int c = 1;
         int d;
 
