@@ -11,6 +11,14 @@ public class RPS {
 
     public void startGame() {
         int cpu = getRandomNumber();
+        String cpuResult = null;
+        if (cpu == 0) {
+            cpuResult = "CPU has Rock";
+        } else if (cpu == 1) {
+            cpuResult = "CPU has Paper";
+        } else if (cpu == 2) {
+            cpuResult = "CPU has Scissors";
+        }
         char user = ' ';
         boolean isRPS = false;
         Scanner scan = new Scanner(System.in);
@@ -23,15 +31,35 @@ public class RPS {
             {
                 isRPS = true;
             }
-        } while (isRPS == false);
-            if (user == 'r' && cpu == 0) {
+        } while (!isRPS);
+        if (user == 'r') {
+            System.out.println(cpuResult);
+            if (cpu == 0) {
                 System.out.println("DRAW!");
-            } else if (user == 'r' && cpu == 1) {
+            } else if (cpu == 1) {
                 System.out.println("CPU WIN!");
-            } else if (user == 'r' && cpu == 2) {
-                System.out.println("PLAYER WIN!");
+            } else if (cpu == 2) {
+            System.out.println("PLAYER WIN!");
             }
-
+        } else if (user == 'p') {
+            if (cpu == 0) {
+                System.out.println("PLAYER WIN!");
+            } else if (cpu == 1) {
+                System.out.println("DRAW!");
+            } else if (cpu == 2) {
+                System.out.println("CPU WIN!");
+            }
+        } else if (user == 's') {
+            if (cpu == 0) {
+                System.out.println("CPU WIN!");
+            } else if (cpu == 1) {
+                System.out.println("PLAYER WIN!");
+            } else if (cpu == 2) {
+                System.out.println("DRAW!");
+            }
+        } else if (user == 'x') {
+            System.out.println("GAME OVER!");
+        }
     }
 
     public int getRandomNumber() {
