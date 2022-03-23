@@ -21,6 +21,7 @@ public class RPS {
         }
         char user = ' ';
         boolean isRPS = false;
+        boolean gameOver = false;
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Welcome to RPS");
@@ -41,6 +42,7 @@ public class RPS {
             } else if (cpu == 2) {
             System.out.println("PLAYER WIN!");
             }
+            gameOver = true;
         } else if (user == 'p') {
             if (cpu == 0) {
                 System.out.println("PLAYER WIN!");
@@ -49,6 +51,7 @@ public class RPS {
             } else if (cpu == 2) {
                 System.out.println("CPU WIN!");
             }
+            gameOver = true;
         } else if (user == 's') {
             if (cpu == 0) {
                 System.out.println("CPU WIN!");
@@ -57,7 +60,11 @@ public class RPS {
             } else if (cpu == 2) {
                 System.out.println("DRAW!");
             }
+            gameOver = true;
         } else if (user == 'x') {
+            gameOver = true;
+        }
+        if (gameOver) {
             System.out.println("GAME OVER!");
         }
     }
