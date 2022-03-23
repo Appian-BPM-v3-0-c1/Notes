@@ -1,16 +1,42 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        boolean exit = false;
+        int input;
+        Scanner s = new Scanner(System.in);
+        int a;
+        int b;
         Problems problems = new Problems();
-        int sum;
-        System.out.println("Hello World!");
-        System.out.println("My name is Jonathan Oyama.");
-        /* =============Easy program test */
-        Problems.Easy();
-        /* ============= */
+        do {
+            System.out.println("Which program");
+            System.out.println("\n1. Easy");
+            System.out.println("2. Moderate");
+            System.out.println("3. Final Boss");
+            input = s.nextInt();
 
-        /* Moderate program test */
-        //problem2.getModulus();
-        /* ============= */
+            if (input == 1) {
+                // Easy program
+                System.out.println("Type in first number:");
+                a = s.nextInt();
+                System.out.println("Type in second number:");
+                b = s.nextInt();
+                System.out.println("The sum of the two numbers is: " + problems.easy(a, b));
+                exit = true;
+            }
+            else if (input == 2) {
+                // Moderate program
+                System.out.println("Type in a number: ");
+                a = s.nextInt();
+                System.out.println(problems.moderate(a));
+                exit = true;
+            }
+            else if (input == 3) {
+                // Final boss program
+                exit = true;
+            }
+
+        } while (exit == false);
+        System.out.println("Goodbye!");
     }
 }
