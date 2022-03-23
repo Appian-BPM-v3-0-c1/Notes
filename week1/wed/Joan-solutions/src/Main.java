@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        JoanAllProblemsMine problems = new JoanAllProblemsMine();
+        JoanSolutions problems = new JoanSolutions();
 
         System.out.println(problems.easy(0, 0, 0));
 
