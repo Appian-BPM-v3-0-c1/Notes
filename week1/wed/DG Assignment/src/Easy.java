@@ -1,10 +1,11 @@
 public class Easy {
 
-    public easy() {
-        int a = 23;
-        int b = 47;
-        int sum = a + b;
+    int a = 23;
+    int b = 47;
+    int sum = a + b;
 
+    public void easyPrint() {
         System.out.println(sum);
     }
+
 }
