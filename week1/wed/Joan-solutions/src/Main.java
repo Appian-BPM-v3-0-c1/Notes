@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        JoanAllProblems problems = new JoanAllProblems();
+        JoanAllProblemsMine problems = new JoanAllProblemsMine();
 
-        System.out.println(problems.easy(1, 2));
+        System.out.println(problems.easy(0, 0, 0));
 
-        System.out.println(problems.moderate(3));
+        System.out.println(problems.moderate(1, 1));
 
-        System.out.println(problems.finalBoss("localization"));
+        System.out.println(problems.finalBoss("", "", (char) 0, (char) 0, 0, ""));
     }
 }

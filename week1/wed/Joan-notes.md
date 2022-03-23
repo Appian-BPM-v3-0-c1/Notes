@@ -49,3 +49,36 @@ public String finalBoss () {}
 ```
 public String final_boss() {}
 ```
+
+Conditional statements are used by using `if`, `elseif`, and `else` statements.
+
+Loops are used to iterate a program more than once. If the number of iterations is fixed, it's okay to use a loop.
+
+```
+for (initialization; condition; increment/decrement) {
+    /* statement or code to be executed */
+}
+```
+
+* **Initialization** is the initial condition executed at the start of the loop.
+* **Condition** is the second condition executed each time the loop iterates.
+* **Increment/Decrement** is the optional condition that says *how* the increment/decrement of the value should occur.
+* **Statement** is executed each time until the second condition becomes false.
+
+A **for-each** loop is used to traverse any array or collection in Java. We don't need to use increments because the values are already present.
+
+```
+int arr[] = {12, 23, 44, 56, 78};
+
+for (int n : arr) {
+    System.out.println(n);
+}
+```
+
+Whiles and loops can be used interchangeably. My trainer likes to use whiles when using indices or nested loops.
+
+```
+while (condition is true) {
+    /* keep doing this while loop */
+}
+```
