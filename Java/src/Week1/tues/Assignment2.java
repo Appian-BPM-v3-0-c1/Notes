@@ -6,6 +6,9 @@ public class Assignment2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	
+		
+		try {
 		
 		int a ;
 		int userInput;
@@ -49,7 +52,14 @@ public class Assignment2 {
 			
 			System.out.println("Thank you");
 		}
-
+		
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Something went wrong");
+			
+		}
 	}
 
 }
