@@ -6,9 +6,9 @@ public class Problems {
 
     public String moderate(int a) {
         if (a % 2 == 0) {
-            return "This Number Is Even.";
+            return "Even";
         } else {
-            return "This Number Is Odd.";
+            return "Odd";
         }
     }
 
