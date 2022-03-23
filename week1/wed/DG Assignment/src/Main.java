@@ -15,6 +15,7 @@ public class Main {
         FinalBoss fb = new FinalBoss();
         fb.finalBoss();
 
+        System.out.println();
 
     }
 }
