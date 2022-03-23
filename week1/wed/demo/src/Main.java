@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         boolean exit = false;
         int input;
+        String c;
         Scanner s = new Scanner(System.in);
         int a;
         int b;
@@ -33,6 +34,9 @@ public class Main {
             }
             else if (input == 3) {
                 // Final boss program
+                System.out.println("Type in a word: ");
+                c = s.nextLine();
+                2
                 exit = true;
             }
 
