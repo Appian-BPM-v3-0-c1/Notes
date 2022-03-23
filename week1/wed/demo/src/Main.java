@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Scanner;
 
 public class Main {
@@ -42,5 +43,13 @@ public class Main {
 
         } while (exit == false);
         System.out.println("Goodbye!");
+=======
+
+public class Main {
+    public static void main(String[] args) {
+        Menu menu = new Menu();
+
+        menu.startMenu();
+>>>>>>> a80a60832bbe4576427b6dde33e9cacc40857ef5
     }
 }
