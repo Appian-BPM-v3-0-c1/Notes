@@ -111,7 +111,7 @@ output:
  */ 
 ```
 
-## Java for-each Loop
+### Java for-each Loop
 
 The for-each loop is used to traverse array or collection in Java. It is easier to use than simple for loop because we
 don't need to increment value and use subscript notation.
@@ -126,7 +126,7 @@ for (int n : arr) {
 }
 ```
 
-## While Loop
+### While Loop
 
 The Java while loop is used to iterate a part of the program repeatedly until the specified Boolean condition is true.
 As soon as the Boolean condition becomes false, the loop automatically stops.
