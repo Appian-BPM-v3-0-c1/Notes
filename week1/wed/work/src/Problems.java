@@ -1,13 +1,26 @@
-public class Moderate {
-    public static void moderate(String[] args) {
-        int x = 20;
-        if (x % 2 == 0) {
-            System.out.println("x is even");
-        } else {
-            System.out.println("x is odd");
-        }
+public class Problems {
 
+
+    public int easy(int a, int b) {
+        return a + b;
     }
+
+    public int moderate(int a) {
+        if(a % 2 == 0) {
+            return "Even";
+        } else {
+            return "Odd"
+        }
+    }
+
+    public String hard(String s) {
+        if(s.length() > 10) {
+            return s.charAt(0) + String.valueOf(s.length() - 2) + s.charAt(s.length() - 1);
+        } else {
+            return s;
+        }
+    }
+
 }
 
 
