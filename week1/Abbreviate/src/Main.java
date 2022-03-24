@@ -11,6 +11,7 @@ char last = s.charAt(length-1);
 //System.out.println(first);
 //System.out.println(last);
 
+
 System.out.println("Intput= "+s);
 System.out.print("Output= ");
 System.out.print(first);
