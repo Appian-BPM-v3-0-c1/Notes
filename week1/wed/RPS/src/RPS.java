@@ -9,15 +9,21 @@ public class RPS {
         int cpuwins = 0;
         int draws = 0;
 
-        System.out.println("Welcome to RPS");
+        System.out.println("Welcome to ROCK PAPER SCISSORS!");
+        System.out.println("CAN YOU BEAT THE COMPUTER?");
+        System.out.println("LET'S BEGIN!");
 
-        while (user != 'x') {
+        do {
 
             int cpu = getRandomNumber();
             int round = 0;
             Scanner scan = new Scanner(System.in);
 
-            System.out.println("\nPick r (rock) p (paper) s (scissor) x (exit).");
+            System.out.println("\nCHOOSE ONE OF THE FOLLOWING:");
+            System.out.println("[r] for ROCK");
+            System.out.println("[p] for PAPER");
+            System.out.println("[s] for SCISSORS");
+            System.out.println("[x] to EXIT");
 
             user = scan.nextLine().charAt(0);
 
@@ -46,7 +52,7 @@ public class RPS {
                 System.out.println("CPU WINS!");
                 cpuwins = cpuwins + 1;
             } else if (user == 'p' && cpu == 2) {
-                System.out.println("DRAW");
+                System.out.println("IT IS A DRAW!");
                 draws = draws + 1;
             } else if (user == 'x') {
                 System.out.println("Thank you for playing!");
@@ -54,12 +60,29 @@ public class RPS {
                 System.out.println("You have chosen poorly.");
             }
 
-        }
-
         System.out.println("\n\033[4;2m" + "FINAL SCORES" + "\033[0m");
-        System.out.println("\nTotal Player wins: " + userwins + ".");
+        System.out.println("Total Player wins: " + userwins + ".");
         System.out.println("Total CPU wins: " + cpuwins + ".");
         System.out.println("Total Draws: " + draws + ".");
+        if (userwins < cpuwins) {
+            System.out.println("YOU'RE LOSING!");
+        } else if (cpuwins < userwins){
+            System.out.println("YOU'RE WINNING!");
+        } else {
+            System.out.println("IT'S A TIE!");
+        }
+        } while (user != 'x');
+
+        while (user == 'x') {
+            System.out.println("\n!!!"+"GAME OVER"+"!!!");
+            if (userwins < cpuwins) {
+                System.out.println("YOU LOSE!");
+            } else if (cpuwins < userwins){
+                System.out.println("WINNER WINNER WINNER!");
+            } else {
+                System.out.println("TYING IS NOT AN OPTION! YOU CAN DO BETTER!");
+            } break;
+        }
 
     }
 
