@@ -15,6 +15,9 @@ public class Dog {
     }
     public Dog() {
     }
+    public void setName(String word) {
+        name = word;
+    }
     public String toString() {
         return (this.name) + ", " + (this.breed) + ", " + (this.color) + ", " + (this.size) + ", " + (this.hair) + ", " + (this.age);
     }
