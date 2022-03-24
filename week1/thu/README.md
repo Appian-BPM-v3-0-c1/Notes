@@ -141,3 +141,44 @@ while (condition is true) {
   
 }    
 ```
+
+# Package and imports
+
+A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to
+avoid name conflicts, and to write a better maintainable code. Packages are divided into two categories:
+
+- preventing naming conflicts. For example there can be two classes with name Employee in two packages,
+  college.staff.cse.Employee and college.staff.ee.Employee
+- Making searching/locating and usage of classes, interfaces, enumerations and annotations easier
+- Providing controlled access: protected and default have package level access control. A protected member is accessible
+  by classes in the same package and its subclasses. A default member (without any access specifier) is accessible by
+  classes in the same package only.
+- Packages can be considered as data encapsulation (or data-hiding).
+
+# Constructors
+
+Java constructors or constructors in Java is used to construct something in our programs. A
+constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of
+a class is created. It can be used to set initial values for object attributes.
+
+```
+public class Dog {
+
+  /* Attributes */
+  String breed;
+  String color;
+  String size;
+  String hair;
+  
+  /* Default constructor */
+  public Dog() { }
+    
+  /* Set the class attribute */
+  public Dog(String breed, String color, String size, String hair) {
+    this.breed = breed;
+    this.color = color;
+    this.size = size;
+    this.hair = hair;
+  }
+} 
+```
