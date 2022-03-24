@@ -1,3 +1,12 @@
+/* Game of Rock Paper Scissor
+ * group project
+ * Frank Torrezao
+ * Joan Burgos
+ * Date:03/23/22
+ */
+
+
+
 package Week1.wed.Project1;
 
 import java.util.Scanner;
@@ -9,7 +18,7 @@ public class Game {
 	public void startGame()
 	{
 		
-		
+		//variables
 		char user = ' ';
 		int won= 0;
 		int lost = 0;
@@ -19,7 +28,7 @@ public class Game {
 		System.out.println("Welcome to RPS");
 		
 		while(user != 'x')
-		{
+		{   //called getRandomNumber method
 			int cpu = getRandomNumber();
 			
 			System.out.println("\nPick r (rock) p (paper) s (scissor) x (exit)");
@@ -99,19 +108,14 @@ public class Game {
 		System.out.print("\tLost: " + lost);
 		System.out.print("\tDraws: " + draws);
 		
-		
 	}
 	
 	
 	public int getRandomNumber()
 	{
-		
+		//Generate random numbers between 0 and 2
 		return (int)(Math.random() * 3);
 	}
-	
 
-	
-	
-	
 
 }
