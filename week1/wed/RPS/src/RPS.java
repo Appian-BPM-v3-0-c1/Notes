@@ -33,7 +33,7 @@ public class RPS {
                 System.out.println("Player win with paper.");
                 playerWin++;
             } else if (user == 'p' && cpu == 1) {
-                System.out.println("Draw, both picked rock.");
+                System.out.println("Draw, both picked Paper.");
                 draw++;
 
             } else if (user == 'p' && cpu == 2) {
