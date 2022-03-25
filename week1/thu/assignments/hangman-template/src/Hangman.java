@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman {
-    public void startGame() {
+    public static void startGame() {
         int life = 6;
         char guess = ' ';
         String word = getRandomWord();
@@ -14,6 +14,7 @@ public class Hangman {
             System.out.println("\nLife: " + life);
             System.out.println("Word to guess: " + hidden);
             System.out.print("Take a guess: ");
+            System.out.println("\nResult:");
 
             guess = scan.nextLine().charAt(0);
 
@@ -27,12 +28,44 @@ public class Hangman {
     }
 
     private void display(char[] bank, int life, String hidden) {
+        if (life <= 5) {
+            System.out.println('0');
+        }
+        if (life <= 4) {
+            System.out.println('1');
+        }
+        if (life <= 3) {
+            System.out.println('2');
+        }
+        if (life <= 2) {
+            System.out.println('3');
+        }
+        if (life <= 1) {
+            System.out.println('2');
+        }
+
     }
 
     private void displayHangman(int life) {
+        if (life <= 5) {
+            System.out.println('0');
+        }
+        if (life <= 4) {
+            System.out.println('1');
+        }
+        if (life <= 3) {
+            System.out.println('2');
+        }
+        if (life <= 2) {
+            System.out.println('3');
+        }
+        if (life <= 1) {
+            System.out.println('4');
+        }
+        
     }
 
-    private String getRandomWord() {
+    private static String getRandomWord() {
         String[] words = {"appian", "java", "python", "html", "css", "angular", "react", "javascript", "csharp", "matlab"};
         Random rand = new Random();
         int randNumber = rand.nextInt(10);
@@ -40,7 +73,7 @@ public class Hangman {
         return words[randNumber];
     }
 
-    private String hideWord(String word) {
+    private static String hideWord(String word) {
         String hidden = "";
 
         for (int i = 0; i < word.length(); i++) {
@@ -50,7 +83,7 @@ public class Hangman {
         return hidden;
     }
 
-    private boolean isGuess(char guess, String word) {
+    private static boolean isGuess(char guess, String word) {
         for (int i = 0; i < word.length(); i++) {
             if (guess == word.charAt(i)) {
                 return true;
@@ -59,7 +92,7 @@ public class Hangman {
         return false;
     }
 
-    private String updateHidden(char guess, String word, String hidden) {
+    private static String updateHidden(char guess, String word, String hidden) {
         StringBuilder sb = new StringBuilder(hidden);
 
         for (int i = 0; i < word.length(); i++) {
@@ -77,7 +110,8 @@ public class Hangman {
         throw new RuntimeException();
     }
 
-    private void addToBank(char[] bank, char guess) {}
+    private void addToBank(char[] bank, char guess) {
+    }
 
     private boolean duplicateGuess(char[] bank, char guess) {
         throw new RuntimeException();
