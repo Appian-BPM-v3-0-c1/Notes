@@ -77,7 +77,8 @@ public class Hangman {
         throw new RuntimeException();
     }
 
-    private void addToBank(char[] bank, char guess) {}
+    private void addToBank(char[] bank, char guess) {
+    }
 
     private boolean duplicateGuess(char[] bank, char guess) {
         throw new RuntimeException();
