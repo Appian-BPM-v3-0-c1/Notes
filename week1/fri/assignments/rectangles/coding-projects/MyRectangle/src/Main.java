@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Comparable compare = new Comparable();
-        Rectangle[] bank = new Rectangle[10];
+        Rectangle[] bank = new Rectangle[3];
         Scanner scan = new Scanner(System.in);
         Rectangle maxP = bank[0];
         Rectangle maxA = bank[0];
@@ -36,8 +36,8 @@ public class Main {
         }
 
         System.out.println("Rectangles: " + Arrays.toString(bank));
-        System.out.println(maxA);
-        System.out.println(maxP);
+        System.out.println("This is the max area: " + maxA);
+        System.out.println("This is the max perimeter: " + maxP);
 
 
 
