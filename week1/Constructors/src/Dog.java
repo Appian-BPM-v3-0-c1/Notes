@@ -20,17 +20,6 @@ public class Dog {
         this.behavior = behavior;
     }
 
-    @Override
-    public String toString() {
-        return "Dog{" +
-                "breed='" + breed + '\'' +
-                ", color='" + color + '\'' +
-                ", size='" + size + '\'' +
-                ", hair='" + hair + '\'' +
-                ", name='" + name + '\'' +
-                ", behavior='" + behavior + '\'' +
-                '}';
-    }
 
     public String getBreed() {
         return breed;
@@ -79,5 +68,19 @@ public class Dog {
     public void setBehavior(String behavior) {
         this.behavior = behavior;
     }
+
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                ", size='" + size + '\'' +
+                ", hair='" + hair + '\'' +
+                ", name='" + name + '\'' +
+                ", behavior='" + behavior + '\'' +
+                '}';
+    }
 }
+
 
