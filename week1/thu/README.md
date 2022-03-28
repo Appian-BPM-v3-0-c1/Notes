@@ -142,6 +142,83 @@ while (condition is true) {
 }    
 ```
 
+# Arrays
+
+An array is a container object that holds a fixed number of values of a single type. The length of an array is
+established when the array is created. After creation, its length is fixed. You have seen an example of arrays already,
+in the main method of the "Hello World!" application. This section discusses arrays in greater detail.
+
+<img src="https://docs.oracle.com/javase/tutorial/figures/java/objects-tenElementArray.gif">
+
+Each item in an array is called an element, and each element is accessed by its numerical index. As shown in the
+preceding illustration, numbering begins with 0. The 9th element, for example, would therefore be accessed at index 8.
+
+The following program, ArrayDemo, creates an array of integers, puts some values in the array, and prints each value to
+standard output.
+
+```
+class ArrayDemo {
+    public static void main(String[] args) {
+        // declares an array of integers
+        int[] anArray;
+
+        // allocates memory for 10 integers
+        anArray = new int[10];
+           
+        // initialize first element
+        anArray[0] = 100;
+        // initialize second element
+        anArray[1] = 200;
+        // and so forth
+        anArray[2] = 300;
+        anArray[3] = 400;
+        anArray[4] = 500;
+        anArray[5] = 600;
+        anArray[6] = 700;
+        anArray[7] = 800;
+        anArray[8] = 900;
+        anArray[9] = 1000;
+
+        System.out.println("Element at index 0: "
+                           + anArray[0]);
+        System.out.println("Element at index 1: "
+                           + anArray[1]);
+        System.out.println("Element at index 2: "
+                           + anArray[2]);
+        System.out.println("Element at index 3: "
+                           + anArray[3]);
+        System.out.println("Element at index 4: "
+                           + anArray[4]);
+        System.out.println("Element at index 5: "
+                           + anArray[5]);
+        System.out.println("Element at index 6: "
+                           + anArray[6]);
+        System.out.println("Element at index 7: "
+                           + anArray[7]);
+        System.out.println("Element at index 8: "
+                           + anArray[8]);
+        System.out.println("Element at index 9: "
+                           + anArray[9]);
+    }
+} 
+```
+
+The output from this program is:
+
+```
+Element at index 0: 100
+Element at index 1: 200
+Element at index 2: 300
+Element at index 3: 400
+Element at index 4: 500
+Element at index 5: 600
+Element at index 6: 700
+Element at index 7: 800
+Element at index 8: 900
+Element at index 9: 1000
+```
+
+
 # Package and imports
 
 A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to
@@ -157,9 +234,9 @@ avoid name conflicts, and to write a better maintainable code. Packages are divi
 
 # Constructors
 
-Java constructors or constructors in Java is used to construct something in our programs. A
-constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of
-a class is created. It can be used to set initial values for object attributes.
+Java constructors or constructors in Java is used to construct something in our programs. A constructor in Java is a
+special method that is used to initialize objects. The constructor is called when an object of a class is created. It
+can be used to set initial values for object attributes.
 
 ```
 public class Dog {
