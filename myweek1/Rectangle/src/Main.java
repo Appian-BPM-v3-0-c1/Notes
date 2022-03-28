@@ -10,23 +10,25 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         Comparator comparator = new Comparator();
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 3; i++){
             System.out.println("Enter in name, width, and length");
             rectangle = new Rectangle(san.next(), scan.nextInt());
             arr[i] = rectangle;
         }
 
-        System.out.println(rectangle.findMaxArea(arr,comparator));
-        findMax();
+        System.out.println(rectangle.findArea(arr,comparator));
+        System.out.println(rectangle.findPerimeter(arr, arr ,comparator, comparator));
+        /*System.out.println(rectangle.findMaxArea(arr,comparator));
+        findMax();*/
 
+        public static void findMax(){
+         */
 
+    }
 
 
 
     }
 
-    public boolean islessThanArea findRectangle(int length, int width){
-        for (int i = 0; i <= length.length; i++)
-            for (int k = 0; k <= width.length; k++) {
-            }
+
 }
