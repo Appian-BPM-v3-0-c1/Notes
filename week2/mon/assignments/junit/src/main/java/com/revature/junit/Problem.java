@@ -9,6 +9,16 @@ public class Problem {
 
     public String reverse(String s) {
 
+     int lastDigit = 0;
+     char[] user;
+
+     //what I am returning
+     int reverse;
+
+
+     for(int i =)
+
+
         return "";
     }
 }
