@@ -1,8 +1,7 @@
-
 public class Main {
     public static void main(String[] args) {
-        Menu menu = new Menu();
+        RPS rps = new RPS();
 
-        menu.startMenu();
+        rps.startGame();
     }
 }

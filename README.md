@@ -3,9 +3,10 @@
 ## Zoom Link
 
 **Join Zoom Meeting**
-https://zoom.us/j/95528581036?pwd=NDU2MXVLbjFUdnQzVkVGNjdMT1Vpdz09
+https://revature.zoom.us/j/98255544939?pwd=Y1FuRG9zZEgvN3hYS3NYV0pXdUN5UT09
 
-**Meeting ID**: 955 2858 1036 
+
+**Meeting ID**: 982 5554 4939 
 
 **Passcode**: revature
 
