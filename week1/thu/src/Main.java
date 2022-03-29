@@ -17,7 +17,7 @@ public class Main {
 
 
             if (cpuMove == 0 && userMove == 0) {
-                System.out.println("it is a draw");
+                System.out.println("draw");
             } else if (cpuMove == 0 && userMove == 1) {
                 System.out.println("You Win");
             } else if (cpuMove == 0 && userMove == 2) {
@@ -25,7 +25,7 @@ public class Main {
             } else if (cpuMove == 1 && userMove == 0) {
                 System.out.println("you lose");
             } else if (cpuMove == 1 && userMove == 1) {
-                System.out.println("it is a draw");
+                System.out.println("draw");
             } else if (cpuMove == 1 && userMove == 2) {
                 System.out.println("You Win");
             } else if (cpuMove == 2 && userMove == 0) {
@@ -33,7 +33,7 @@ public class Main {
             } else if (cpuMove == 2 && userMove == 1) {
                 System.out.println("You lose");
             } else if (cpuMove == 2 && userMove == 2) {
-                System.out.println("it is a draw");
+                System.out.println("draw");
             } else if (userMove==3){
                 System.exit(0);
             }

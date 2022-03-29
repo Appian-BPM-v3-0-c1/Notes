@@ -1,18 +1,10 @@
 import java.util.Scanner;
+public static void main(String[] args) {
+int[] arr = new int[12];
+String[]  str = new;
 
-public class Main {
-    public static void main(String[] args) {
-
-        int[] arr = new int[12];
-        String[]strs =new
-
-        int user = 0;
-        Scanner scan = new Scanner(System.in);
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("enter the months of the year(one by one)")
-        input= user
-            arr[i] = user;
-        }
-    }
+Scanner scan = new Scanner(system.in);
 }
+for int i = 0; <arr.length; i++)
+        System.out.println(enter the month of the yer(one by one ))
+        }
