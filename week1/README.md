@@ -1,36 +1,17 @@
-# Monday
+# Appian-BPM-v3.0.c1
 
-- Computer fundamentals - Type of memory
-- Environment variables
-- Operating system fundamentals
+## Zoom Link
 
-# Tuesday
+**Join Zoom Meeting**
+https://zoom.us/j/95528581036?pwd=NDU2MXVLbjFUdnQzVkVGNjdMT1Vpdz09
 
-- Introduction to Git
-- Resolving pull requests
-- Github Issues
-- AWS introduction
-- AWS EC2
-- AMI
-- Security groups
-- SSH into EC2 instance
+**Meeting ID**: 955 2858 1036 
 
-# Wednesday
+**Passcode**: revature
 
-- Introduction to Java
-- JDK, JRE, JVM
-- First Java Program - Hello World!
-- Methods and parameters
-- Variable scopes
+## Discord Link
 
-# Thursday
+**Link**: https://discord.gg/FEjgctDP
 
-- Control flow statements
-- Arrays, var-args, for each loops
-- Package and imports
-- Constructors
 
-# Friday
-- Class vs Object
-- Access modifiers
-- Non-access modifiers
+

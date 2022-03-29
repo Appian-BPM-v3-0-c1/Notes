@@ -1,5 +1,27 @@
 import java.util.Scanner;
 
+public class Game {
+
+    public void startGame() {
+        int cpu = getRandomNumber ();
+        char user = ' ';
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Welcome to Game");
+        System.out.println("\nPick r (rock) p (paper) s (scissors) x (exit)");
+
+        user = scan.nextLine().charAt(0);
+
+    }
+
+    public int getRandomNumber () {
+        return (int)(Math.random() * 3);
+    }
+}
+
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -34,23 +56,23 @@ public class Main {
                 } else if (user == 's' && cpu == 0);
                 System.out.println("Player WINS");
 
-                }
+            }
 
                 if (user == 'r' && cpu == 0) {
-                    System.out.println("Draw!");
-                   }else if (user == 'r' && cpu == 1) {
-                    System.out.println("CPU WINS!");
-                  } else if (user == 'r' && cpu == 2)
-                System.out.println("Player WINS");
+                System.out.println("Draw!");
+            }else if (user == 'r' && cpu == 1) {
+                System.out.println("CPU WINS!");
+            } else if (user == 'r' && cpu == 2)
+                    System.out.println("Player WINS");
 
-                }
-
-            }
-
-
-            public int getRandomNumber() {
-                return (int) (Math.random() * 3);
-            }
-            
         }
+
     }
+
+
+    public int getRandomNumber() {
+        return (int) (Math.random() * 3);
+    }
+
+}
+
