@@ -1,4 +1,4 @@
-package com.revature.abstraction;
+package com.revature.abstraction_example;
 
 public class Dog extends Animal {
     private String hair;
