@@ -4,9 +4,9 @@ public abstract class Shape {
 
     public Shape() {
 
-        int height;
-        int length;
-        int Area;
+        double height;
+        double length;
+        double Area;
 
         return;
 
