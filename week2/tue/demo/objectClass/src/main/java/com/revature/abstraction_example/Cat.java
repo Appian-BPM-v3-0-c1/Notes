@@ -1,4 +1,4 @@
-package com.revature.abstraction;
+package com.revature.abstraction_example;
 
 public class Cat extends Animal {
     private String whiskers;
