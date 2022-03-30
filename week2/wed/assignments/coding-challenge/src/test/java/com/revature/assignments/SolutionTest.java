@@ -29,5 +29,18 @@ public class SolutionTest {
         int t4 = 0;
 
         Assert.assertEquals(new int[]{0, 1, 2, 3, 4, 5}, solution.twoSum(arr4, t4));
+<<<<<<< HEAD
+=======
+    }
+
+    @Test
+    public void isPalindrome() {
+        Assert.assertEquals(true, solution.isPalindrome(121));
+        Assert.assertEquals(false, solution.isPalindrome(-123));
+        Assert.assertEquals(false, solution.isPalindrome(123));
+        Assert.assertEquals(true, solution.isPalindrome(101));
+        Assert.assertEquals(false, solution.isPalindrome(10));
+        Assert.assertEquals(true, solution.isPalindrome(0));
+>>>>>>> 0b33857666b468e3c0897466d74de6efa997d994
     }
 }
