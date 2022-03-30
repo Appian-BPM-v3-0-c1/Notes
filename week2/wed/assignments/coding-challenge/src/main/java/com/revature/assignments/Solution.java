@@ -5,4 +5,10 @@ public class Solution {
 
         throw new RuntimeException();
     }
+
+
+    public boolean isPalindrome(int x) {
+
+        throw new RuntimeException();
+    }
 }
