@@ -6,6 +6,7 @@ package com.revature.abstraction_example;
  * Attributes under abstract class needs to be protected.
  */
 
+<<<<<<< HEAD
 public abstract class Animal {
     protected String name;
     protected int age;
