@@ -1,2 +1,4 @@
-package com.revature.tu;public class Circle {
+package com.revature.tu;
+
+public class Circle {
 }

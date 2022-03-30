@@ -1,2 +1,4 @@
-package com.revature.tu;public class Shape {
+package com.revature.tu;
+
+public class Shape {
 }

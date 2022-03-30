@@ -1,2 +1,4 @@
-package com.revature.tu;public class Triangle {
+package com.revature.tu;
+
+public class Triangle {
 }
