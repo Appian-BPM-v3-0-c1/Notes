@@ -6,7 +6,8 @@ public abstract class Shape extends Object {
     public Shape() {
     }
     public Shape(int a,int b) {
-
+        this.x = a;
+        this.y = b;
     }
 
     protected abstract double calculateArea();
