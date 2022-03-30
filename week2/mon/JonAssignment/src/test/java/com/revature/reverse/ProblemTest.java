@@ -1,15 +1,12 @@
 package com.revature.reverse;
 
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.Assert;
 
 public class ProblemTest {
     Problem problem = new Problem();
     @Test
     public void reverse() {
-
         String test1 = "bao";
         String test2 = "oab";
         String test3 = "";
