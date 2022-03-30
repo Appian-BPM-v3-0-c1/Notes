@@ -1,5 +1,13 @@
 package com.revature.abstraction;
 
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.text.DecimalFormat;
+
+import static org.junit.Assert.*;
+
+
 public class Rectangle extends Shape {
     private double height;
     private double width;

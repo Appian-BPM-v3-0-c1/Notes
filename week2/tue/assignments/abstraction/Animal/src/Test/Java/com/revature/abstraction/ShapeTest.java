@@ -24,6 +24,10 @@ public class ShapeTest {
         Assert.assertNotEquals(20, circle.calculateArea());
         Assert.assertNotEquals(0, rectangle.calculateArea());
         Assert.assertNotEquals(5, triangle.calculateArea());
+        Assert.assertEquals(180, test1, circle.calculateCircumference());
+        Assert.assertEquals(20, test2, rectangle.calculateCircumference());
+        Assert.assertEquals(34, test5, triangle.calculateArea());
+        Assert.assertEquals(20, test2, circle.calculateArea());
 
     }
 }
