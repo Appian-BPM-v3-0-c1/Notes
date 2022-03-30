@@ -8,7 +8,10 @@ public class Problem {
      */
 
     public String reverse(String s) {
+        String reverseString = " ";
 
+
+        if(String.length < 0)
         return "";
     }
 }
