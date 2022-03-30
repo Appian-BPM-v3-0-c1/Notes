@@ -24,5 +24,10 @@ public class SolutionTest {
         int t3 = 6;
 
         Assert.assertEquals(new int[]{0, 1}, solution.twoSum(arr3, t3));
+
+        int[] arr4 = {-5, -1, 0, 0 , 5, 1};
+        int t4 = 0;
+
+        Assert.assertEquals(new int[]{0, 1, 2, 3, 4, 5, 6}, solution.twoSum(arr4, t4));
     }
 }
