@@ -9,14 +9,11 @@ public abstract class Shape {
 
         String Triangle [] = {"Area","width","height"};
 
-        String Circle [] = {"Circumference", "Pi","Radius"};
+        String Circle [] = {"Circumference", "Pi","Radius", "diameter"};
 
-        double height;
-        double length;
-        double Area;
+        double Area [] = {double height, double length};
+        double Circumference [] = {double diameter, double radius};
+        double Circle_Area [] = {double radius, double pi};
 
-        return;
-
-        Area = (length * width);
         }
     }
