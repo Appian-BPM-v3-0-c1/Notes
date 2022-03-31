@@ -1,6 +1,12 @@
 package com.revature.assignments;
 
+<<<<<<< HEAD
 import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
+=======
+public class Solution {
+
+    public int[] twoSum(int[] nums, int target) {
+>>>>>>> a68b605bb1b974b35500f5c9b97c7399bfca2fd4
 
 import java.sql.SQLOutput;
 import java.util.*;
@@ -29,5 +35,11 @@ public class Solution {
         }
         //return array indexes in new int array object
         return new int[] {};
+    }
+
+
+    public boolean isPalindrome(int x) {
+
+        throw new RuntimeException();
     }
 }
