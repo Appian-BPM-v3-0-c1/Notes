@@ -27,6 +27,18 @@ public class Solution {
         return arr;
     }
     public boolean isPalindrome(int x) {
-        throw new RuntimeException();
+        int originalX = x, reversedX = 0, remainder;
+        while (x != 0) {
+            remainder = x % 10;
+            reversedX = reversedX * 10 + remainder;
+            x /= 10;
+        }
+
+        if (originalX == reversedX) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

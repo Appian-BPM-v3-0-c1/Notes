@@ -7,12 +7,27 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Solution solution = new Solution();
-        twoSumPrompt(scan);
-        //menu();
+        int choice = 0;
+        do {
+            System.out.println("\nWelcome to the 3-30-2022 Coding Challenge!");
+            System.out.println("Type in a number to test a program");
+            System.out.println("1. TwoSumPrompt");
+            System.out.println("2. IsPalindromePrompt");
+            System.out.println("3. Exit");
+            System.out.println("Type in your selection and press Enter:");
+            choice = scan.nextInt();
+            if (choice == 1) {
+                twoSumPrompt(scan,solution);
+            }
+            if (choice == 2) {
+                isPalindromePrompt(scan,solution);
+            }
+        } while (choice != 3);
+        System.out.println("\nThank you for trying out the Coding Challenge!");
+        System.out.println("Have a nice day!");
     }
 
-    static void twoSumPrompt(Scanner scan) {
-        Solution solution = new Solution();
+    static void twoSumPrompt(Scanner scan, Solution sol) {
         int[] arr = new int[0];
         int choice = 1;
         String output = "{";
@@ -54,7 +69,7 @@ public class Main {
 
         //Third part: Calculating output from twoSum solution
 
-        int arr2[] = solution.twoSum(arr,target);
+        int arr2[] = sol.twoSum(arr,target);
         int count = 0;
         output = "{";
         if (arr2.length != 0) {
@@ -74,5 +89,16 @@ public class Main {
         }
         output += "}";
         System.out.println(output);
+    }
+    static void isPalindromePrompt(Scanner scan, Solution sol) {
+        System.out.println("\nWelcome to IsPalindrome Program!");
+        System.out.println("Type in a number: ");
+        int numberIn = scan.nextInt();
+        if (sol.isPalindrome(numberIn)) {
+            System.out.println(numberIn + " is a Palindrome.");
+        }
+        else {
+            System.out.println(numberIn + "is not a Palindrome.");
+        }
     }
 }

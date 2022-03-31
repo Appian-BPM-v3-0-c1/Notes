@@ -31,5 +31,11 @@ public class SolutionTest {
 
     @Test
     public void isPalindrome() {
+        Assert.assertEquals(true, solution.isPalindrome(121));
+        Assert.assertEquals(false, solution.isPalindrome(-123));
+        Assert.assertEquals(false, solution.isPalindrome(123));
+        Assert.assertEquals(true, solution.isPalindrome(101));
+        Assert.assertEquals(false, solution.isPalindrome(10));
+        Assert.assertEquals(true, solution.isPalindrome(0));
     }
 }
