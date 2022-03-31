@@ -10,4 +10,9 @@ public class Employee implements Boss {
     public void takeTimeOff() {
 
     }
+
+    @Override
+    public void something() {
+
+    }
 }

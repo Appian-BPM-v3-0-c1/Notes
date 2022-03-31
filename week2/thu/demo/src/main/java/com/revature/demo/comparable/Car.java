@@ -1,6 +1,6 @@
 package com.revature.demo.comparable;
 
-public class Car {
+public class Car implements Comparable<Car> {
     private int price;
     private String brand;
     private String model;
@@ -45,5 +45,16 @@ public class Car {
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Car car) {
+        if (getPrice() == car.price) {
+            return 0;
+        } else if (getPrice() > car.price) {
+            return 1;
+        }
+
+        return -1;
     }
 }
