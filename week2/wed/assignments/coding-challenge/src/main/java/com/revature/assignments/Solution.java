@@ -2,8 +2,9 @@ package com.revature.assignments;
 
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
-        int arr[] = {2, 7, 11, 15};
-        int target = 9;
+        int[] nums = {};
+        int target = ;
+
 
 
 
@@ -12,7 +13,35 @@ public class Solution {
 
 
     public boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+
+        int reversed = 0;
+        int lastNum = 0;
+
+        while (x != 0){
+            lastNum = x % 10;
+            reversed = (reversed * 10) + lastNum;
+            x = x / 10;
+            }
+        if (reversed == x){
+            return true;
+        }
+
+
 
         throw new RuntimeException();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
