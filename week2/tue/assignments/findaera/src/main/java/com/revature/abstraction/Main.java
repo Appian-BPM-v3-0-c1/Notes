@@ -1,16 +1,22 @@
 package com.revature.abstraction;
 
-import java.util.Scanner;
-
 public class Main {
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+
+        Circle circle = new Circle(10);
+        System.out.println("Circle's area: " + circle.calculateArea());
+        System.out.println("Circle's circumference: " + circle.calculateCircumference());
+
+        Rectangle rectangle = new Rectangle(10, 20);
+        System.out.println("Rectangle area: " + rectangle.calculateArea());
+        System.out.println("Rectangle 1's perimeter: " + rectangle.calculateCircumference());
+
+        Triangle triangle = new Triangle(20, 10);
+
+        System.out.println("Triangle's area: " + triangle.calculateArea());
+        System.out.println("Triangle's perimeter: " + triangle.calculateCircumference());
 
     }
-
-//* Part 1
-// com.revature.abstraction.Shape:calcuate Aera() and calculate Circumtance() no parameters and return a double
-//Part 2
- // Circle class his class will have a constructor, accessors and mutators, and the abstract methods defined for this class.
-   //Re
 }
+
