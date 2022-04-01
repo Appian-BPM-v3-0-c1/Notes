@@ -1,3 +1,5 @@
+//serilization is for compressing data for streams//
+
 import.java.io.serlization
 
 public class serlization implements{
