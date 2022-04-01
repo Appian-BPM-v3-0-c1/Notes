@@ -3,7 +3,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class string builder {
   public static void main(String[] args)
-    throws Exception 
     {
     
     
