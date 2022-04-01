@@ -1,3 +1,23 @@
 Public class fileio {
 
-}
+public static void main(String[] args)
+{
+
+String fname = args[0];
+
+
+File container_name = new File(fname);
+
+System.out.println("File name :" + f.getName());
+System.out.println("Form:" + f.getPath());
+System.out.println("Form section:" + f.formsection());
+System.out.println("First_form:" + f.getfirstform());
+System.out.println("Page_Form:" + f.exists());
+
+if (f.Page_form()) {
+  System.out.println("Is Empty Form:" + f.emptyform());
+  System.out.println("Is Complete form:" + f.completeform());
+  System.out.println("File size in bytes" + f.length());
+      }
+    }
+  }
