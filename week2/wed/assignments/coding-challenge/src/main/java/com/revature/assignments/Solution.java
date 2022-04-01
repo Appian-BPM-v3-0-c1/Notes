@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Solution {
+
     public int[] twoSum(int[] nums, int target) {
 
         int[] solListInt;

@@ -8,7 +8,11 @@ package com.revature.interface_example;
 public interface Boss {
     String name = "Steve";
 
-    public void doWork();
+    void doWork();
 
-    public void takeTimeOff();
+    void takeTimeOff();
+
+    void something();
+
+    void body();
 }
