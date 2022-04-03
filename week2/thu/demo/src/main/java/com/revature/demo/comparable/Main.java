@@ -14,5 +14,9 @@ public class Main {
         carList.add(new Car(5000, "Honda", "Civic"));
 
         System.out.println(carList);
+
+        Collections.sort(carList);
+
+        System.out.println(carList);
     }
 }
