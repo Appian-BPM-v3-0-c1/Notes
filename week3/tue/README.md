@@ -52,6 +52,8 @@ what type of data is expected inside of each column, and it also identifies how 
 
 https://www.w3schools.com/sql/sql_datatypes.asp
 
+<br>
+
 # Schemas
 
 A database schema is an abstract design that represents the storage of your data in a database. It describes both the
@@ -159,6 +161,8 @@ List of TCL commands:
 
 - **SET TRANSACTION**: Specify characteristics for the transaction.
 
+<br>
+
 # Basic SQl Queries
 
 ## CREATE TABLE
@@ -224,6 +228,8 @@ INSERT INTO table_name(column1, column2, …) VALUES (value1, value2, …);
 DROP TABLE IF EXISTS table_name;
 </pre>
 
+<br>
+
 # Built-in functions - Scalar and aggregate
 
 For doing operations on data SQL has many built-in functions, they are categorized in two categories and further
@@ -278,6 +284,9 @@ These functions are used to do operations from the values of the column and a si
 
 
 - **SUM()**: the SUM() function returns the sum of all the values of the selected column.
+
+
+<br>
 
 # Logical Operations
 
