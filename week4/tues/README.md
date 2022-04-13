@@ -1,5 +1,110 @@
-# Contract first/last
+# Introduction to SOAP
 
-# XML namespace
+## What is SOAP?
 
-# SOAP message structures
+**SOAP** is an **XML**-based protocol for accessing web services over HTTP. It has some specification which could be
+used across all applications.
+
+**SOAP** is known as the **Simple Object Access Protocol**, and **SOAP** is a protocol or in other words is a definition
+of how web services talk to each other or talk to client applications that invoke them.
+
+**SOAP** was developed as an intermediate language so that applications built on various programming languages could
+talk easily to each other and avoid the extreme development effort.
+
+## SOAP Introduction
+
+In today’s world, there is huge number of applications which are built on different programming languages. For example,
+there could be a web application designed in Java, another in .Net and another in PHP.
+
+Exchanging data between applications is crucial in today’s networked world. But data exchange between these
+heterogeneous applications would be complex. So will be the complexity of the code to accomplish this data exchange.
+
+One of the methods used to combat this complexity is to use XML (Extensible Markup Language) as the intermediate
+language for exchanging data between applications.
+
+Every programming language can understand the XML markup language. Hence, XML was used as the underlying medium for data
+exchange.
+
+But there are no standard specifications on use of XML across all programming languages for data exchange. That is where
+SOAP software comes in.
+
+SOAP was designed to work with XML over HTTP and have some sort of specification which could be used across all
+applications.
+
+## Advantages of SOAP
+
+SOAP is the protocol used for data interchange between applications. Below are some of the reasons as to why SOAP is
+used.
+
+- When developing SOAP based Web services, you need to have some of language which can be used for web services to talk
+  with client applications. SOAP is the perfect medium which was developed in order to achieve this purpose.
+
+
+- SOAP is a light-weight protocol that is used for data interchange between applications. Note the keyword ‘light.’
+  Since SOAP programming is based on the XML language, which itself is a light weight data interchange language.
+
+
+- SOAP is designed to be platform independent and is also designed to be operating system independent. So the SOAP
+  protocol can work any programming language based applications on both Windows and Linux platform.
+
+
+- SOAP works on the HTTP protocol, which is the default protocol used by all web applications.
+
+## SOAP Building Blocks
+
+The SOAP specification defines something known as a “SOAP message” which is what is sent to the web service and the
+client application.
+
+<img src="https://www.guru99.com/images/3-2016/032316_0711_SOAPSimpleO1.png">
+
+The SOAP message is nothing but a mere XML document which has the below components.
+
+- An Envelope element that identifies the XML document as a SOAP message – This is the containing part of the SOAP
+  message and is used to encapsulate all the details in the SOAP message. This is the root element in the SOAP message.
+
+
+- A Header element that contains header information – The header element can contain information such as authentication
+  credentials which can be used by the calling application. It can also contain the definition of complex types which
+  could be used in the SOAP message. By default, the SOAP message can contain parameters which could be of simple types
+  such as strings and numbers, but can also be a complex object type.
+
+A simple SOAP service example of a complex type is shown below.
+
+Suppose we wanted to send a structured data type which had a combination of a “Tutorial Name” and a “Tutorial
+Description,” then we would define the complex type as shown below.
+
+The complex type is defined by the element tag `<xsd:complexType>`. All of the required elements of the structure along
+with their respective data types are then defined in the complex type collection.
+
+```
+<xsd:complexType>     
+ <xsd:sequence>       
+ 	<xsd:element name="Tutorial Name" type="string"/>         
+  	<xsd:element name="Tutorial Description"  type="string"/>
+  </xsd:sequence>
+</xsd:complexType>
+```
+
+A Body element that contains call and response information – This element is what contains the actual data which needs
+to be sent between the web service and the calling application. Below is an SOAP web service example of the SOAP body
+which actually works on the complex type defined in the header section. Here is the response of the Tutorial Name and
+Tutorial Description that is sent to the calling application which calls this web service.
+
+```
+<soap:Body>
+   <GetTutorialInfo>
+		<TutorialName>Web Services</TutorialName> 
+		<TutorialDescription>All about web services</TutorialDescription> 
+   </GetTutorialInfo>
+</soap:Body>
+```
+
+## SOAP Message Structure
+
+One thing to note is that SOAP messages are normally auto-generated by the web service when it is called.
+
+Whenever a client application calls a method in the web service, the web service will automatically generate a SOAP
+message which will have the necessary details of the data which will be sent from the web service to the client
+application.
+
+<br>
