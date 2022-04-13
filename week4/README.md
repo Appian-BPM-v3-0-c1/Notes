@@ -6,15 +6,11 @@
 
 ## Tuesday
 
-- Overview of web services
-- SOAP based WS architecture
-- WSDL
+- Introduction to SOAP
 
 ## Wednesday
 
-- Contract first/last
-- XML namespace
-- SOAP message structures
+- Introduction to REST
 
 ## Thursday
 
