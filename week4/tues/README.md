@@ -108,3 +108,43 @@ message which will have the necessary details of the data which will be sent fro
 application.
 
 <br>
+
+# WSDL
+
+WSDL is an XML notation for describing a web service. A WSDL definition tells a client how to compose a web service
+request and describes the interface that is provided by the web service provider.
+
+The WSDL file is used to describe in a nutshell what the web service does and gives the client all the information
+required to connect to the web service and use all the functionality provided by the web service.
+
+## WSDL Contract
+
+Even though there is no official definition of the web-service contract, the contract is assumed to be the WSDL file.
+The WSDL describes all operations that the service provides, locations of the end-points (where the service can be
+invoked), and simple and complex elements that can be passed in requests and responses.
+
+For instance, a massage-based contract can look like this:
+
+```
+Request: <action>get</action><product>SOAP</product>
+
+Response: <product name="soap">
+             <ingredients>
+                <item>fat</item>
+                <item>lye</item>
+                <item>perfume</item>
+                <item>color</item>
+             </ingredients>
+          </product>
+```
+
+## Contract-First vs. Contract-Last
+
+In the case of contract first, clients are decoupled from any logic on the server. The logic can be revised on the
+server without affecting the clients. Teams can work simultaneously on the server and the client implementations as long
+as they agree on the contract, which is the first thing that is created anyway. More granular control exists over what
+is in the request and response messages and WSDL structure.
+
+In the case of contract-last, developers don’t need to learn SOAP or any XML-related technologies, and services are
+created quickly by “exposing” internal APIs with automated tools. The learning curve is
+smaller compared with the contract-first, and so could be the development time.
