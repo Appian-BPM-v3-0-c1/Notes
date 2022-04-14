@@ -7,6 +7,8 @@
 ## Tuesday
 
 - Introduction to SOAP
+- WSDL
+- Contract-First vs Contract-Last
 
 ## Wednesday
 
